@@ -1,0 +1,25 @@
+header {
+	background-image:url(https://chrisaam.files.wordpress.com/2015/03/wallpaper-2846361.jpg);
+	background-position: center center;
+	background-size:cover;
+	position:relative;
+	height:100vh;
+	min-height: 400px;
+}
+
+hr {
+	max-width: 200px;
+	border-width: 3px;
+}
+
+.header-title {
+	position: absolute;
+	top: 50%;
+	padding: 20px 30px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+	transform: translate(0,-50%);  
+}

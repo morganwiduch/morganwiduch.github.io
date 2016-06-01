@@ -1,7 +1,129 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+	<title>Morgan Widuch</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	
+	<style>
+		body {
+		  	position: relative;
+		}
+		section {
+			min-height: 300px;
+		}
+
+		.navbar {
+			transition: all 0.3s ease-in-out;
+		}
+
+		@media (min-width: 768px) {
+			.navbar.transparent {
+				background: transparent;
+				border-color: transparent;
+			}
+			.navbar.transparent .navbar-nav>li>a {
+				color: #fff;
+			}
+			.navbar.transparent .navbar-brand {
+				color: #fff;
+			}
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-default navbar-fixed-top transparent">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Morgan Widuch</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#interests">Interests</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="main">
+		<header>
+			<div id="hero">
+    			<div class="header-title">
+      				<h1> "QUOTE THAT YOU LOVE" </h1>
+      				<hr>
+      				<p><i>Quoted from</i></p>
+    			</div>
+  			</div>
+		</header>
+
+	</div>
+
+	<section id="about">
+		
+	</section>
+
+	<section id="skills">
+		
+	</section>
+
+	<section id="resume">
+		
+	</section>
+
+	<section id="projects">
+		
+	</section>
+
+	<section id="interests">
+		
+	</section>
+
+	<section id="contact">
+		
+	</section>
+
+	<footer>
+		
+	</footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script>
+	$('.navbar a').smoothScroll();
+
+	// Change background of nav bar on scroll
+	$(window).scroll(function() {    
+	  var scroll = $(window).scrollTop();
+	  if (scroll > 100) {
+	      $(".navbar").removeClass("transparent");
+	    } else {
+	      $(".navbar").addClass("transparent");
+	    }
+	});
+
+
+</script>
+
 </html>
