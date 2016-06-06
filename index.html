@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Morgan Widuch</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/box-hover.css">
 	
 	<style>
-		body {
-		  	position: relative;
-		}
-		section {
-			min-height: 300px;
-		}
-
-		.navbar {
-			transition: all 0.3s ease-in-out;
+		/*Please update browser message*/
+		.progress.active .progress-bar {
+		    -webkit-transition: none !important;
+		    transition: none !important;
 		}
 
-		@media (min-width: 768px) {
-			.navbar.transparent {
-				background: transparent;
-				border-color: transparent;
-			}
-			.navbar.transparent .navbar-nav>li>a {
-				color: #fff;
-			}
-			.navbar.transparent .navbar-brand {
-				color: #fff;
-			}
+		.btn.btn-custom {
+			border: solid 2px #fff;
+		    border-radius: 0;
+		    padding: 15px 25px;
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    font-weight: 700;
+		    font-size: 1.05em;
+		    transition: all 0.2s ease-in-out;
 		}
+
+		.btn.btn-custom:hover {
+			background: #fff;
+			color: #000;
+		}
+
+		.section-divider {
+			height: 500px;
+			background: url("https://placem.at/places?w=1200&h=600") no-repeat center center; 
+		  	-webkit-background-size: cover;
+	 	 	-moz-background-size: cover;
+		  	-o-background-size: cover;
+		  	background-size: cover;
+		}
+
 	</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-default navbar-fixed-top transparent">
+	<nav class="navbar navbar-inverse navbar-fixed-top transparent">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -46,7 +62,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Morgan Widuch</a>
+				<a class="navbar-brand custom-name-font" href="#">Morgan Widuch</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,42 +82,306 @@
 	<div class="main">
 		<header>
 			<div id="hero">
-    			<div class="header-title">
-      				<h1> "QUOTE THAT YOU LOVE" </h1>
-      				<hr>
-      				<p><i>Quoted from</i></p>
-    			</div>
-  			</div>
+				<div class="header-title container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<h1 class="custom-name-font" style="font-size: 50px;">Welcome</h1>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quis pariatur, blanditiis animi impedit facere non tempore, velit facilis officia quia suscipit tempora.</p>
+							<a href="#about" style="margin-top: 40px;" class="btn btn-custom smooth-scroll">Tell me More</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
-
 	</div>
 
-	<section id="about">
-		
+	<section class="dark" id="about">
+		<div class="container text-center">
+			<div class="section-header">
+				<h1>About Me</h1>
+				<hr>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident possimus doloremque cupiditate qui minus labore omnis eos saepe sit aliquam, obcaecati ab quae quas quia sequi, quis similique tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laudantium quidem, officiis nemo odio consectetur eum praesentium natus rerum excepturi aspernatur perspiciatis ipsum. At cupiditate neque rerum, laborum a esse.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="skills">
-		
+		<div class="container text-center">
+			<div class="section-header">
+				<h1>Skills & Academic History</h1>
+				<hr>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam voluptatem accusantium doloremque laudantium totam aperiam.</p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" class="collapsed" href="#collapse1" data-parent="#accordion">Collapsible panel</a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse">
+								<div class="panel-body">Panel Body</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" class="collapsed" href="#collapse2" data-parent="#accordion">Collapsible panel</a>
+								</h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse">
+								<div class="panel-body">Panel Body</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" class="collapsed" href="#collapse3" data-parent="#accordion">Collapsible panel</a>
+								</h4>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse">
+								<div class="panel-body">Panel Body</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="skills-bar">
+						<div class="skill-wrapper">
+							<div class="skill-label">
+								<p class="title">Skill</p>
+								<p class="progress-label">70%</p>
+							</div>
+							<div class="progress-container">
+							    <div class="progress progress-striped active">
+							        <div class="progress-bar progress-bar-success"></div>
+							    </div>
+							</div>
+						</div>
+							
+						<div class="skill-wrapper">
+							<div class="skill-label">
+								<p class="title">Skill</p>
+								<p class="progress-label">70%</p>
+							</div>
+							<div class="progress-container">
+							    <div class="progress progress-striped active">
+							        <div class="progress-bar progress-bar-success"></div>
+							    </div>
+							</div>
+						</div>
+							
+						<div class="skill-wrapper">
+							<div class="skill-label">
+								<p class="title">Skill</p>
+								<p class="progress-label">70%</p>
+							</div>
+							<div class="progress-container">
+							    <div class="progress progress-striped active">
+							        <div class="progress-bar progress-bar-success"></div>
+							    </div>
+							</div>
+						</div>
+							
+						<div class="skill-wrapper">
+							<div class="skill-label">
+								<p class="title">Skill</p>
+								<p class="progress-label">70%</p>
+							</div>
+							<div class="progress-container">
+							    <div class="progress progress-striped active">
+							        <div class="progress-bar progress-bar-success"></div>
+							    </div>
+							</div>
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section id="resume">
-		
+	<div class="section-divider"></div>
+
+	<section class="dark" id="resume">
+		<div class="container text-center">
+			<div class="section-header">
+				<h1>Resume</h1>
+				<hr>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam voluptatem accusantium doloremque laudantium totam aperiam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="projects">
-		
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="sub-header">
+						<h1>Projects</h1>
+						<hr>
+						<h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam voluptatem accusantium doloremque laudantium totam aperiam.</h4>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="row">
+					<div class="col-sm-4">
+						<figure class="effect-apollo">
+							<img src="https://placem.at/people?w=360&h=360" alt="img18"/>
+							<figcaption>
+								<h2>Strong <span>Apollo</span></h2>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#" class="open-project" data-project-id="1">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="col-sm-4">
+						<figure class="effect-apollo">
+							<img src="https://placem.at/places?w=360&h=360" alt="img18"/>
+							<figcaption>
+								<h2>Strong <span>Apollo</span></h2>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#" class="open-project" data-project-id="1">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="col-sm-4">
+						<figure class="effect-apollo">
+							<img src="https://placem.at/things?w=360&h=360" alt="img18"/>
+							<figcaption>
+								<h2>Strong <span>Apollo</span></h2>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#" class="open-project" data-project-id="1">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
+	<div class="section-divider"></div>
 
 	<section id="interests">
-		
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="sub-header">
+						<h1>Interests</h1>
+						<hr>
+						<h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam voluptatem accusantium doloremque laudantium totam aperiam.</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row int-grid">
+				<div class="col-sm-4">
+					<div class="int-header">
+						<div class="icon">
+							<i class="fa fa-plus"></i>
+						</div>
+						<div class="title">
+							<p><b>Lorem Ipsum</b></p>
+						</div>
+					</div>
+					<div class="content">
+						Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="int-header">
+						<div class="icon">
+							<i class="fa fa-plus"></i>
+						</div>
+						<div class="title">
+							<p><b>Lorem Ipsum</b></p>
+						</div>
+					</div>
+					<div class="content">
+						Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="int-header">
+						<div class="icon">
+							<i class="fa fa-plus"></i>
+						</div>
+						<div class="title">
+							<p><b>Lorem Ipsum</b></p>
+						</div>
+					</div>
+					<div class="content">
+						Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section id="contact">
-		
-	</section>
+	<div class="fullpage-modal" id="project-1">
+
+		<div class="modal-content">
+			<div class="close-modal">
+                <a href="#" class="close-icon">
+                	<i class="lnr lnr-cross"></i>
+                </a>
+            </div>
+			<div class="container text-center">
+				<div class="header">
+					<h1>Project Name 1</h1>
+					<h4>Sub header project 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt cumque autem ipsam at.</h4>
+				</div>
+				<div class="img-wrapper">
+					<img src="https://placem.at/places?w=360&h=360" alt="">	
+				</div>
+				<div class="description">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sequi veniam reprehenderit labore delectus placeat, recusandae officia perspiciatis, aliquid eaque, eius accusamus fugit aut architecto velit excepturi deleniti! Minima, cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eius veritatis, omnis earum nostrum ipsam, eveniet aspernatur aut sit minima nisi veniam deleniti velit maiores consequatur quam, ratione, sequi vero.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer>
-		
+		<div class="container text-center">
+			<h3 class="footer-header custom-name-font"><span>Morgan Widuch</span></h3>
+			<ul class="footer-nav">
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#interests">Interests</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<p class="disclosure">&copy; 2016 Morgan Widuch & Rhyan Foo Kune. All rights reserved.</p>
+		</div>
 	</footer>
 </body>
 
@@ -111,17 +391,52 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script>
-	$('.navbar a').smoothScroll();
+	$('.navbar a, a.smooth-scroll, .footer-nav a').smoothScroll();
 
 	// Change background of nav bar on scroll
 	$(window).scroll(function() {    
 	  var scroll = $(window).scrollTop();
 	  if (scroll > 100) {
-	      $(".navbar").removeClass("transparent");
-	    } else {
-	      $(".navbar").addClass("transparent");
-	    }
+		  $(".navbar").removeClass("transparent");
+		} else {
+		  $(".navbar").addClass("transparent");
+		}
 	});
+
+	$("a.open-project").on("click", function(event){
+		event.preventDefault();
+		var projectID = $(this).data("project-id");
+		$("#project-"+projectID).fadeIn().addClass("open-modal");
+		$("body").addClass('open-modal-project');
+	});
+
+	$(".close-modal a.close-icon").on("click", function(event){
+		event.preventDefault();
+		$(this).closest(".fullpage-modal").fadeOut().removeClass("open-modal");
+		$("body").removeClass('open-modal-project');
+	});
+
+	$(window).scroll(function(){
+		if ($(".progress-bar").inView()) {
+			$(".progress-bar").animate({
+			    width: "70%"
+			}, 2500);
+		}
+	});
+
+	$.fn.inView = function(){
+	    //Window Object
+	    var win = $(window);
+	    //Object to Check
+	    obj = $(this);
+	    //the top Scroll Position in the page
+	    var scrollPosition = win.scrollTop();
+	    //the end of the visible area in the page, starting from the scroll position
+	    var visibleArea = win.scrollTop() + win.height();
+	    //the end of the object to check
+	    var objEndPos = (obj.offset().top + obj.outerHeight());
+	    return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
+	};
 
 
 </script>
